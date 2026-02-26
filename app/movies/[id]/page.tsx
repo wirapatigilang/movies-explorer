@@ -14,9 +14,10 @@ export default async function MoviesDetail({ params }: Props) {
 
   return (
     <>
-    <Breadcrumbs></Breadcrumbs>
+      <Breadcrumbs></Breadcrumbs>
       <div className="p-6">
         <h1 className=" text-3xl font-bold">{movie.title}</h1>
+
         <p className="mt-4">{movie.overview}</p>
       </div>
     </>

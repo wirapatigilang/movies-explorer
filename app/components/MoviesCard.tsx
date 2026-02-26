@@ -18,7 +18,7 @@ export default function MoviesCard() {
   }, []);
 
   return (
-    <div className="grid grid-cols-5 gap-4 mx-14">
+    <div className="grid grid-cols-5 gap-4 mx-14 py-4">
       {movies.map((movie) => (
         <div className="relative w-[300px] rounded-xl overflow-hidden">
           <Link href={`/movies/${movie.id}`}>
