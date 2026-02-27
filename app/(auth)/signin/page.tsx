@@ -1,4 +1,4 @@
-import { signInAction, signUpAction } from "../actions/auth";
+import { signInAction, signUpAction } from "../../actions/auth";
 
 export default function SignInPage() {
   return (
@@ -7,7 +7,9 @@ export default function SignInPage() {
       <form className="form" action={signInAction}>
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
-        <button className="btn btn-primary" type="submit">test</button>
+        <button className="btn btn-primary" type="submit">
+          test
+        </button>
       </form>
     </div>
   );

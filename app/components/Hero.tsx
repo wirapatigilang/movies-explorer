@@ -9,7 +9,7 @@ export default async function Hero() {
 
   return (
     <div className="hero min-h-128 min-w-64 bg-base rounded-2xl">
-      <div className="w-256 bg-base-300 rounded-2xl shadow-gray-200">
+      <div className="w-5xl bg-base-300 rounded-2xl shadow-gray-200">
         <div className="hero-content flex-col lg:flex-row max-w-3xl gap-24">
           <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.id} className="max-w-54 rounded-2xl" />
           <div>

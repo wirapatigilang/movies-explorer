@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+
+  /* Base hierarchy — clean dark */
+  --color-base-100: oklch(14% 0.012 260); /* darkest — background utama */
+  --color-base-200: oklch(18% 0.013 260); /* sedikit lebih terang — card/surface */
+  --color-base-300: oklch(23% 0.014 260); /* border / divider / subtle surface */
+  --color-base-content: oklch(88% 0.008 260); /* teks utama — off-white bersih */
+
+  /* Neutral */
+  --color-neutral: oklch(25% 0.014 262);
+  --color-neutral-content: oklch(85% 0.008 260);
+
+  /* Primary — Electric Cyan */
+  --color-primary: oklch(72% 0.18 200);
+  --color-primary-content: oklch(12% 0.01 200);
+
+  /* Secondary — Vivid Violet */
+  --color-secondary: oklch(65% 0.22 295);
+  --color-secondary-content: oklch(98% 0.005 295);
+
+  /* Accent — Neon Lime / Amber */
+  --color-accent: oklch(82% 0.2 110);
+  --color-accent-content: oklch(14% 0.01 110);
+
+  /* Status */
+  --color-info: oklch(68% 0.16 225);
+  --color-success: oklch(70% 0.18 155);
+  --color-warning: oklch(78% 0.19 75);
+  --color-error: oklch(62% 0.22 25);
+}
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+}
