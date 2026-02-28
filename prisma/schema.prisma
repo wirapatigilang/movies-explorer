@@ -23,6 +23,7 @@ model User {
   updatedAt     DateTime  @updatedAt
   sessions      Session[]
   accounts      Account[]
+  ratings       Rating[]
 
   @@unique([email])
   @@map("user")
@@ -74,4 +75,17 @@ model Verification {
 
   @@index([identifier])
   @@map("verification")
+}
+
+model Rating {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  tmdbId    Int
+  value     Int //Rating 1-5
+  createdAt DateTime @default(now())
+
+  @@unique([userId, tmdbId])
+  @@index([userId])
+  @@map("rating")
 }
